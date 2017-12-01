@@ -231,6 +231,13 @@ function bones_comments( $comment, $args, $depth ) {
 <?php
 } // don't remove this bracket!
 
+/* responsive video embeds */
+add_filter( 'embed_oembed_html', 'custom_oembed_filter', 10, 4 ) ;
+
+function custom_oembed_filter($html, $url, $attr, $post_ID) {
+    $return = '<div class="video-container">'.$html.'</div>';
+    return $return;
+}
 
 /*
 This is a modification of a function found in the
