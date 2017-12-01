@@ -56,6 +56,9 @@ function bones_ahoy() {
   // cleaning up excerpt
   add_filter( 'excerpt_more', 'bones_excerpt_more' );
 
+  // image compression
+  add_filter( 'jpeg_quality', function($arg){return 98;});
+
 } /* end bones ahoy */
 
 // let's get this party started
