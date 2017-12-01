@@ -70,4 +70,35 @@ probably best not to use it. I mean, were you going to anyway? */
 	box-sizing:         $type;
 }
 
-
+@mixin transform($transformation) {
+  -webkit-transform: $transformation;
+      -ms-transform: $transformation;
+          transform: $transformation;
+}
+@mixin prefixed($property, $value) {
+  -webkit-#{$property}: #{$value};
+  -moz-#{$property}: #{$value};
+  -ms-#{$property}: #{$value};
+  -o-#{$property}: #{$value};
+  #{$property}: #{$value};
+}
+@mixin rounded_corners($top: 10px, $right: 10px, $bottom: $top, $left: $right) {
+  border-radius: $top $right $bottom $left;
+  -moz-border-radius: $top $right $bottom $left;
+  -webkit-border-top-left-radius: $top;
+  -webkit-border-top-right-radius: $right;
+  -webkit-border-bottom-left-radius: $left;
+  -webkit-border-bottom-right-radius: $bottom;
+}
+@mixin transition($transition...) {
+  // defining prefixes so we can use them in mixins below
+  $prefixes:      ("-webkit-", "" );
+  @each $prefix in $prefixes {
+    #{$prefix}transition: $transition;
+  }
+}
+@mixin columns($count) {
+  -webkit-column-count:$count;
+  -moz-column-count:$count;
+  column-count:$count;
+}
