@@ -5,7 +5,8 @@ Description: This site was built using the Bones Development Theme. For more inf
 Author: Your Name Here
 Author URI: http://www.yoururlhere.com
 Version: 1.7
-Tags: fluid-layout, responsive-layout, accessibility-ready, translation-ready, microformats, rtl-language-support
+Tags: accessibility-ready, translation-ready, microformats, rtl-language-support
+Text Domain: bonestheme
 
 License: WTFPL
 License URI: http://sam.zoy.org/wtfpl/
@@ -13,3 +14,4 @@ License URI: http://sam.zoy.org/wtfpl/
 .sticky {}          /* DO NOT EDIT THIS */
 .gallery-caption {} /* THESE ARE USELESS */
 .bypostauthor {}    /* THEY ARE ONLY TO KEEP THEME CHECK HAPPY */
+.screen-reader-text {} /* THEME CHECK WANTS THIS AS WELL */

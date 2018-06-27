@@ -75,7 +75,7 @@ function rw_title( $title, $sep, $seplocation ) {
 
   // Add a page number if necessary:
   if ( $paged >= 2 || $page >= 2 ) {
-    $title .= " {$sep} " . sprintf( __( 'Page %s', 'dbt' ), max( $paged, $page ) );
+    $title .= " {$sep} " . sprintf( __( 'Page %s', 'bonestheme' ), max( $paged, $page ) );
   }
 
   return $title;
@@ -202,9 +202,6 @@ function bones_theme_support() {
 			'chat'               // chat transcript
 		)
 	);
-
-	// wp menus
-	add_theme_support( 'menus' );
 
 	// registering wp3+ menus
 	register_nav_menus(

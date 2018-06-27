@@ -22,11 +22,13 @@ Let's get everything up and running.
 function bones_ahoy() {
 
   //Allow editor style.
-  //add_editor_style( get_stylesheet_directory_uri() . '/library/css/editor-style.css' );
+  add_editor_style( get_stylesheet_directory_uri() . '/library/css/editor-style.css' );
 
   // let's get language support going, if you need it
   load_theme_textdomain( 'bonestheme', get_template_directory() . '/library/translation' );
 
+  // let Wordpress manage the document title.
+  add_theme_support( 'title-tag' );
 
   // launching operation cleanup
   add_action( 'init', 'bones_head_cleanup' );
@@ -101,8 +103,8 @@ add_filter( 'image_size_names_choose', 'bones_custom_image_sizes' );
 
 function bones_custom_image_sizes( $sizes ) {
     return array_merge( $sizes, array(
-        'bones-thumb-600' => __('600px by 150px'),
-        'bones-thumb-300' => __('300px by 100px'),
+        'bones-thumb-600' => __('600px by 150px', 'bonestheme'),
+        'bones-thumb-300' => __('300px by 100px', 'bonestheme'),
     ) );
 }
 
