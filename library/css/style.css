@@ -707,6 +707,9 @@ BOX SIZING
 /* @include box-sizing(border-box); */
 /* NOTE: value of "padding-box" is only supported in Gecko. So
 probably best not to use it. I mean, were you going to anyway? */
+/*
+ * Flex
+ */
 /******************************************************************
 Site Name:
 Author:

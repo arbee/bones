@@ -70,11 +70,24 @@ probably best not to use it. I mean, were you going to anyway? */
 	box-sizing:         $type;
 }
 
+/*
+ * Flex
+ */
+@mixin flex() {
+  display: -webkit-flex;
+  display: flex;
+}
+@mixin flex_grid() {
+  @include flex();
+  flex-wrap: wrap;
+}
+
 @mixin transform($transformation) {
   -webkit-transform: $transformation;
       -ms-transform: $transformation;
           transform: $transformation;
 }
+
 @mixin prefixed($property, $value) {
   -webkit-#{$property}: #{$value};
   -moz-#{$property}: #{$value};
@@ -82,6 +95,7 @@ probably best not to use it. I mean, were you going to anyway? */
   -o-#{$property}: #{$value};
   #{$property}: #{$value};
 }
+
 @mixin rounded_corners($top: 10px, $right: 10px, $bottom: $top, $left: $right) {
   border-radius: $top $right $bottom $left;
   -moz-border-radius: $top $right $bottom $left;
@@ -90,13 +104,14 @@ probably best not to use it. I mean, were you going to anyway? */
   -webkit-border-bottom-left-radius: $left;
   -webkit-border-bottom-right-radius: $bottom;
 }
+
 @mixin transition($transition...) {
-  // defining prefixes so we can use them in mixins below
   $prefixes:      ("-webkit-", "" );
   @each $prefix in $prefixes {
     #{$prefix}transition: $transition;
   }
 }
+
 @mixin columns($count) {
   -webkit-column-count:$count;
   -moz-column-count:$count;
