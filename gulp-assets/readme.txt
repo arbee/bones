@@ -1,4 +1,4 @@
-######### To use Gulp for SASS and JS minifaction ##########
+######### To use Gulp for SASS and JS minification ##########
 
 Requires node.js and compass
 
