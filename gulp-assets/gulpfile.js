@@ -7,7 +7,7 @@ var jsdest = 'wp-content/themes/'+theme+'/library/js';
 var csssource = 'wp-content/themes/'+theme+'/library/scss/**/*.scss';
 var cssdest = 'wp-content/themes/'+theme+'/library/css';
 
-gulp.task('default', ['compress']);
+gulp.task('default', ['watch']);
 
 function error(err) {
   console.log(err);
