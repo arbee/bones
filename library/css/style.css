@@ -1018,7 +1018,77 @@ them however you see fit.
   .d-1of12 {
     float: left;
     padding-right: 0.75em;
-    width: 8.33%;
+    width: 8.333333%;
+  }
+
+  /* line 252, ../scss/partials/_grid.scss */
+  .d-2of12 {
+    float: left;
+    padding-right: 0.75em;
+    width: 16.666667%;
+  }
+
+  /* line 256, ../scss/partials/_grid.scss */
+  .d-3of12 {
+    float: left;
+    padding-right: 0.75em;
+    width: 25%;
+  }
+
+  /* line 260, ../scss/partials/_grid.scss */
+  .d-4of12 {
+    float: left;
+    padding-right: 0.75em;
+    width: 33.333333%;
+  }
+
+  /* line 264, ../scss/partials/_grid.scss */
+  .d-5of12 {
+    float: left;
+    padding-right: 0.75em;
+    width: 41.666667%;
+  }
+
+  /* line 268, ../scss/partials/_grid.scss */
+  .d-6of12 {
+    float: left;
+    padding-right: 0.75em;
+    width: 50%;
+  }
+
+  /* line 272, ../scss/partials/_grid.scss */
+  .d-7of12 {
+    float: left;
+    padding-right: 0.75em;
+    width: 58.333333%;
+  }
+
+  /* line 276, ../scss/partials/_grid.scss */
+  .d-8of12 {
+    float: left;
+    padding-right: 0.75em;
+    width: 66.66667%;
+  }
+
+  /* line 280, ../scss/partials/_grid.scss */
+  .d-9of12 {
+    float: left;
+    padding-right: 0.75em;
+    width: 75%;
+  }
+
+  /* line 284, ../scss/partials/_grid.scss */
+  .d-10of12 {
+    float: left;
+    padding-right: 0.75em;
+    width: 83.333333%;
+  }
+
+  /* line 288, ../scss/partials/_grid.scss */
+  .d-11of12 {
+    float: left;
+    padding-right: 0.75em;
+    width: 91.666667%;
   }
 }
 /*********************

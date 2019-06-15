@@ -247,7 +247,46 @@ them however you see fit.
 
   .d-1of12 {
     @include grid-col;
-    width: 8.33%;
+    width: 8.333333%;
   }
-
+  .d-2of12 {
+    @include grid-col;
+    width: 16.666667%;
+  }
+  .d-3of12 {
+    @include grid-col;
+    width: 25%;
+  }
+  .d-4of12 {
+    @include grid-col;
+    width: 33.333333%;
+  }
+  .d-5of12 {
+    @include grid-col;
+    width: 41.666667%;
+  }
+  .d-6of12 {
+    @include grid-col;
+    width: 50%;
+  }
+  .d-7of12 {
+    @include grid-col;
+    width: 58.333333%;
+  }
+  .d-8of12 {
+    @include grid-col;
+    width: 66.66667%;
+  }
+  .d-9of12 {
+    @include grid-col;
+    width: 75%;
+  }
+  .d-10of12 {
+    @include grid-col;
+    width: 83.333333%;
+  }
+  .d-11of12 {
+    @include grid-col;
+    width: 91.666667%;
+  }
 } // end desktop styles
