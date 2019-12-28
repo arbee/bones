@@ -117,3 +117,15 @@ probably best not to use it. I mean, were you going to anyway? */
   -moz-column-count:$count;
   column-count:$count;
 }
+
+/* 
+ * Prefixed calc
+ * both arguments should be in quote
+ */
+ @mixin calc($property, $calculation) {
+  #{$property}: -webkit-calc(#{$calculation});
+  #{$property}: expression(#{$calculation});
+  #{$property}: -moz-calc(#{$calculation});
+  #{$property}: -o-calc(#{$calculation});
+  #{$property}: calc(#{$calculation});
+}
