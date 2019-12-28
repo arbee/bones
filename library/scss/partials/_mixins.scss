@@ -120,7 +120,7 @@ probably best not to use it. I mean, were you going to anyway? */
 
 /* 
  * Prefixed calc
- * both arguments should be in quote
+ * calculation argument should be in quotes
  */
  @mixin calc($property, $calculation) {
   #{$property}: -webkit-calc(#{$calculation});
