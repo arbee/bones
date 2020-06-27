@@ -726,77 +726,81 @@ http://sachagreif.com/sass-color-variables/
       grid-column: auto; }
     /* line 29, ../scss/partials/_grid.scss */
     .grid .grid-col-1 {
-      -ms-grid-column-span: 1;
+      -ms-grid-column-span: 2;
       grid-column: span 1; }
     /* line 33, ../scss/partials/_grid.scss */
     .grid .grid-col-2 {
-      -ms-grid-column-span: 2;
+      -ms-grid-column-span: 3;
       grid-column: span 2; }
     /* line 37, ../scss/partials/_grid.scss */
     .grid .grid-col-3 {
-      -ms-grid-column-span: 3;
+      -ms-grid-column-span: 5;
       grid-column: span 3; }
     /* line 41, ../scss/partials/_grid.scss */
     .grid .grid-col-4 {
-      -ms-grid-column-span: 4;
+      -ms-grid-column-span: 7;
       grid-column: span 4; }
     /* line 45, ../scss/partials/_grid.scss */
     .grid .grid-col-5 {
-      -ms-grid-column-span: 5;
+      -ms-grid-column-span: 9;
       grid-column: span 5; }
     /* line 49, ../scss/partials/_grid.scss */
     .grid .grid-col-6 {
-      -ms-grid-column-span: 6;
+      -ms-grid-column-span: 11;
       grid-column: span 6; }
     /* line 53, ../scss/partials/_grid.scss */
     .grid .grid-col-7 {
-      -ms-grid-column-span: 7;
+      -ms-grid-column-span: 13;
       grid-column: span 7; }
     /* line 57, ../scss/partials/_grid.scss */
     .grid .grid-col-8 {
-      -ms-grid-column-span: 8;
+      -ms-grid-column-span: 15;
       grid-column: span 8; }
     /* line 61, ../scss/partials/_grid.scss */
     .grid .grid-col-9 {
-      -ms-grid-column-span: 9;
+      -ms-grid-column-span: 17;
       grid-column: span 9; }
     /* line 65, ../scss/partials/_grid.scss */
     .grid .grid-col-10 {
-      -ms-grid-column-span: 10;
+      -ms-grid-column-span: 19;
       grid-column: span 10; }
     /* line 69, ../scss/partials/_grid.scss */
     .grid .grid-col-11 {
-      -ms-grid-column-span: 11;
+      -ms-grid-column-span: 21;
       grid-column: span 11; }
     /* line 73, ../scss/partials/_grid.scss */
     .grid .grid-col-12 {
-      -ms-grid-column-span: 12;
+      -ms-grid-column-span: 23;
       grid-column: span 12; }
     /* line 77, ../scss/partials/_grid.scss */
     .grid .grid-col-13 {
-      -ms-grid-column-span: 13;
+      -ms-grid-column-span: 25;
       grid-column: span 13; }
     /* line 81, ../scss/partials/_grid.scss */
     .grid .grid-col-14 {
-      -ms-grid-column-span: 14;
+      -ms-grid-column-span: 27;
       grid-column: span 14; }
     /* line 85, ../scss/partials/_grid.scss */
     .grid .grid-col-15 {
-      -ms-grid-column-span: 15;
+      -ms-grid-column-span: 29;
       grid-column: span 15; }
     /* line 89, ../scss/partials/_grid.scss */
     .grid .grid-col-16 {
-      -ms-grid-column-span: 16;
+      -ms-grid-column-span: 31;
       grid-column: span 16; }
     /* line 93, ../scss/partials/_grid.scss */
+    .grid .grid-col-full {
+      -ms-grid-column-span: 23;
+      grid-column: span 12; }
+    /* line 97, ../scss/partials/_grid.scss */
     .grid.reverse {
       grid-auto-flow: dense; }
-      /* line 95, ../scss/partials/_grid.scss */
+      /* line 99, ../scss/partials/_grid.scss */
       .grid.reverse .main-col {
         -ms-grid-column: 7;
         -ms-grid-column-span: 17;
         grid-column: 4/span 9; }
-      /* line 100, ../scss/partials/_grid.scss */
+      /* line 104, ../scss/partials/_grid.scss */
       .grid.reverse .sidebar {
         -ms-grid-column: 1;
         -ms-grid-column-span: 5;
