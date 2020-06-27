@@ -2,9 +2,9 @@
 
 			<div id="content">
 
-				<div id="inner-content" class="wrap cf">
+				<div id="inner-content" class="wrap grid">
 
-					<main id="main" class="m-all t-2of3 d-5of7 cf" role="main" itemscope itemtype="http://schema.org/Blog">
+					<main id="main" class="main-col cf" role="main" itemscope itemtype="http://schema.org/Blog">
 
 						<?php if (have_posts()) : while (have_posts()) : the_post(); ?>
 

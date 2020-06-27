@@ -20,6 +20,33 @@ http://web-design-weekly.com/blog/2013/05/12/handy-sass-mixins/
 
 ******************************************************************/
 
+@function box-gap($boxes, $gap) {
+  $box: ();
+
+  @for $i from 1 through $boxes {
+    $box: append($box, 1fr, space);
+    //$box: append($box, nth($boxes, $i), space);
+
+    // Adding Gap Between
+    @if $gap > 0 {
+      // Not last Loop
+      @if $i != $boxes {
+        $box: append($box, $gap, space);
+      }
+    }
+  }
+
+  @return $box;
+}
+
+@mixin grid-columns($gap, $columns) {
+  grid-template-columns: repeat($columns, 1fr);
+  @if $gap > 0 {
+    grid-column-gap: $gap;
+  }
+
+  -ms-grid-columns: box-gap($columns, $gap);
+}
 
 /*********************
 TRANSITION

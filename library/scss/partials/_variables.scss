@@ -12,6 +12,17 @@ No one likes a mess.
 ******************************************************************/
 
 /*********************
+GRID VARIABLES
+If you choose more than 16 columns and wish to use custom grids,
+you will need to add them in partials/_grid.scss
+*********************/
+$grid-breakpoint:   768px;
+$grid-columns:      12;
+$grid-gap:          20px;
+$main-grid-span:    9;
+$aside-grid-span:   3;
+
+/*********************
 COLORS
 Need help w/ choosing your colors? Try this site out:
 http://0to255.com/
