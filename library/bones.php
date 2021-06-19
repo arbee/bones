@@ -218,6 +218,13 @@ function bones_theme_support() {
 		'comment-form'
 	) );
 
+	// wp_body_open support, backwards compatible
+	if ( ! function_exists( 'wp_body_open' ) ) {
+    function wp_body_open() {
+        do_action( 'wp_body_open' );
+    }
+	}
+
 } /* end bones theme support */
 
 
