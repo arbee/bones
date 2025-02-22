@@ -70,6 +70,7 @@ the other stylesheets. Remember, keep it light: Speed is Important.
 
 // styles in base.scss
 @import "breakpoints/base";
+@import "blocks/blocks_base";
 
 /*********************
 LARGER MOBILE DEVICES
@@ -94,6 +95,7 @@ you can add resource intensive styles.
 
 	// styles in 768up.scss
 	@import "breakpoints/768up";
+	@import "blocks/blocks_768up";
 
 } // end of media query
 
